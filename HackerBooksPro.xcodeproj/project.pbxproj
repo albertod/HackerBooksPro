@@ -9,11 +9,37 @@
 /* Begin PBXBuildFile section */
 		D3CAAA2A1AE5437A00C7BC53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA291AE5437A00C7BC53 /* main.m */; };
 		D3CAAA2D1AE5437A00C7BC53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA2C1AE5437A00C7BC53 /* AppDelegate.m */; };
-		D3CAAA301AE5437A00C7BC53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA2F1AE5437A00C7BC53 /* ViewController.m */; };
-		D3CAAA331AE5437A00C7BC53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CAAA311AE5437A00C7BC53 /* Main.storyboard */; };
 		D3CAAA351AE5437A00C7BC53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CAAA341AE5437A00C7BC53 /* Images.xcassets */; };
-		D3CAAA381AE5437A00C7BC53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CAAA361AE5437A00C7BC53 /* LaunchScreen.xib */; };
 		D3CAAA441AE5437A00C7BC53 /* HackerBooksProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA431AE5437A00C7BC53 /* HackerBooksProTests.m */; };
+		D3CAAA6F1AE5459300C7BC53 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA691AE5459300C7BC53 /* UIViewController+Navigation.m */; };
+		D3CAAA701AE5459300C7BC53 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA6B1AE5459300C7BC53 /* Model.xcdatamodeld */; };
+		D3CAAA711AE5459300C7BC53 /* ADMCoreBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA6D1AE5459300C7BC53 /* ADMCoreBaseClass.m */; };
+		D3CAAA8F1AE545EF00C7BC53 /* _ADMCoreAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA741AE545EF00C7BC53 /* _ADMCoreAnnotation.m */; };
+		D3CAAA901AE545EF00C7BC53 /* _ADMCoreAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA761AE545EF00C7BC53 /* _ADMCoreAuthor.m */; };
+		D3CAAA911AE545EF00C7BC53 /* _ADMCoreBook.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA781AE545EF00C7BC53 /* _ADMCoreBook.m */; };
+		D3CAAA921AE545EF00C7BC53 /* _ADMCoreImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA7A1AE545EF00C7BC53 /* _ADMCoreImage.m */; };
+		D3CAAA931AE545EF00C7BC53 /* _ADMCorePDF.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA7C1AE545EF00C7BC53 /* _ADMCorePDF.m */; };
+		D3CAAA941AE545EF00C7BC53 /* _ADMCorePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA7E1AE545EF00C7BC53 /* _ADMCorePhoto.m */; };
+		D3CAAA951AE545EF00C7BC53 /* _ADMCoreTag.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA801AE545EF00C7BC53 /* _ADMCoreTag.m */; };
+		D3CAAA961AE545EF00C7BC53 /* ADMCoreAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA821AE545EF00C7BC53 /* ADMCoreAnnotation.m */; };
+		D3CAAA971AE545EF00C7BC53 /* ADMCoreAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA841AE545EF00C7BC53 /* ADMCoreAuthor.m */; };
+		D3CAAA981AE545EF00C7BC53 /* ADMCoreBook.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA861AE545EF00C7BC53 /* ADMCoreBook.m */; };
+		D3CAAA991AE545EF00C7BC53 /* ADMCoreImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA881AE545EF00C7BC53 /* ADMCoreImage.m */; };
+		D3CAAA9A1AE545EF00C7BC53 /* ADMCorePDF.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA8A1AE545EF00C7BC53 /* ADMCorePDF.m */; };
+		D3CAAA9B1AE545EF00C7BC53 /* ADMCorePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA8C1AE545EF00C7BC53 /* ADMCorePhoto.m */; };
+		D3CAAA9C1AE545EF00C7BC53 /* ADMCoreTag.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAA8E1AE545EF00C7BC53 /* ADMCoreTag.m */; };
+		D3CAAAA11AE547AF00C7BC53 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAAA01AE547AF00C7BC53 /* AGTCoreDataStack.m */; };
+		D3CAAAA31AE547EB00C7BC53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3CAAAA21AE547EB00C7BC53 /* Default-568h@2x.png */; };
+		D3CAAAA61AE548F300C7BC53 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAAA51AE548F300C7BC53 /* AGTCoreDataTableViewController.m */; };
+		D3CAAAA91AE5494200C7BC53 /* ADMCoreBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAAA81AE5494200C7BC53 /* ADMCoreBookViewController.m */; };
+		D3CAAAB41AE55B1700C7BC53 /* ADMNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAAB31AE55B1700C7BC53 /* ADMNotesViewController.m */; };
+		D3CAAAB81AE5609200C7BC53 /* AGTNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAAB61AE5609200C7BC53 /* AGTNoteViewController.m */; };
+		D3CAAAB91AE5609200C7BC53 /* AGTNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CAAAB71AE5609200C7BC53 /* AGTNoteViewController.xib */; };
+		D3CAAABD1AE561B300C7BC53 /* AGTPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAABB1AE561B300C7BC53 /* AGTPhotoViewController.m */; };
+		D3CAAABE1AE561B300C7BC53 /* AGTPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CAAABC1AE561B300C7BC53 /* AGTPhotoViewController.xib */; };
+		D3CAAAC21AE5670500C7BC53 /* ADMSimplePDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAAC01AE5670500C7BC53 /* ADMSimplePDFViewController.m */; };
+		D3CAAAC31AE5670500C7BC53 /* ADMSimplePDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CAAAC11AE5670500C7BC53 /* ADMSimplePDFViewController.xib */; };
+		D3CAAAC91AE56FD300C7BC53 /* AGTMultiDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAAAC81AE56FD300C7BC53 /* AGTMultiDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +58,63 @@
 		D3CAAA291AE5437A00C7BC53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3CAAA2B1AE5437A00C7BC53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3CAAA2C1AE5437A00C7BC53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D3CAAA2E1AE5437A00C7BC53 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D3CAAA2F1AE5437A00C7BC53 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D3CAAA321AE5437A00C7BC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3CAAA341AE5437A00C7BC53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D3CAAA371AE5437A00C7BC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D3CAAA3D1AE5437A00C7BC53 /* HackerBooksProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerBooksProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CAAA421AE5437A00C7BC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3CAAA431AE5437A00C7BC53 /* HackerBooksProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerBooksProTests.m; sourceTree = "<group>"; };
+		D3CAAA691AE5459300C7BC53 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
+		D3CAAA6A1AE5459300C7BC53 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		D3CAAA6C1AE5459300C7BC53 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D3CAAA6D1AE5459300C7BC53 /* ADMCoreBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMCoreBaseClass.m; sourceTree = "<group>"; };
+		D3CAAA6E1AE5459300C7BC53 /* ADMCoreBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMCoreBaseClass.h; sourceTree = "<group>"; };
+		D3CAAA731AE545EF00C7BC53 /* _ADMCoreAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ADMCoreAnnotation.h; sourceTree = "<group>"; };
+		D3CAAA741AE545EF00C7BC53 /* _ADMCoreAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ADMCoreAnnotation.m; sourceTree = "<group>"; };
+		D3CAAA751AE545EF00C7BC53 /* _ADMCoreAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ADMCoreAuthor.h; sourceTree = "<group>"; };
+		D3CAAA761AE545EF00C7BC53 /* _ADMCoreAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ADMCoreAuthor.m; sourceTree = "<group>"; };
+		D3CAAA771AE545EF00C7BC53 /* _ADMCoreBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ADMCoreBook.h; sourceTree = "<group>"; };
+		D3CAAA781AE545EF00C7BC53 /* _ADMCoreBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ADMCoreBook.m; sourceTree = "<group>"; };
+		D3CAAA791AE545EF00C7BC53 /* _ADMCoreImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ADMCoreImage.h; sourceTree = "<group>"; };
+		D3CAAA7A1AE545EF00C7BC53 /* _ADMCoreImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ADMCoreImage.m; sourceTree = "<group>"; };
+		D3CAAA7B1AE545EF00C7BC53 /* _ADMCorePDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ADMCorePDF.h; sourceTree = "<group>"; };
+		D3CAAA7C1AE545EF00C7BC53 /* _ADMCorePDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ADMCorePDF.m; sourceTree = "<group>"; };
+		D3CAAA7D1AE545EF00C7BC53 /* _ADMCorePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ADMCorePhoto.h; sourceTree = "<group>"; };
+		D3CAAA7E1AE545EF00C7BC53 /* _ADMCorePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ADMCorePhoto.m; sourceTree = "<group>"; };
+		D3CAAA7F1AE545EF00C7BC53 /* _ADMCoreTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ADMCoreTag.h; sourceTree = "<group>"; };
+		D3CAAA801AE545EF00C7BC53 /* _ADMCoreTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ADMCoreTag.m; sourceTree = "<group>"; };
+		D3CAAA811AE545EF00C7BC53 /* ADMCoreAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMCoreAnnotation.h; sourceTree = "<group>"; };
+		D3CAAA821AE545EF00C7BC53 /* ADMCoreAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMCoreAnnotation.m; sourceTree = "<group>"; };
+		D3CAAA831AE545EF00C7BC53 /* ADMCoreAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMCoreAuthor.h; sourceTree = "<group>"; };
+		D3CAAA841AE545EF00C7BC53 /* ADMCoreAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMCoreAuthor.m; sourceTree = "<group>"; };
+		D3CAAA851AE545EF00C7BC53 /* ADMCoreBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMCoreBook.h; sourceTree = "<group>"; };
+		D3CAAA861AE545EF00C7BC53 /* ADMCoreBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMCoreBook.m; sourceTree = "<group>"; };
+		D3CAAA871AE545EF00C7BC53 /* ADMCoreImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMCoreImage.h; sourceTree = "<group>"; };
+		D3CAAA881AE545EF00C7BC53 /* ADMCoreImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMCoreImage.m; sourceTree = "<group>"; };
+		D3CAAA891AE545EF00C7BC53 /* ADMCorePDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMCorePDF.h; sourceTree = "<group>"; };
+		D3CAAA8A1AE545EF00C7BC53 /* ADMCorePDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMCorePDF.m; sourceTree = "<group>"; };
+		D3CAAA8B1AE545EF00C7BC53 /* ADMCorePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMCorePhoto.h; sourceTree = "<group>"; };
+		D3CAAA8C1AE545EF00C7BC53 /* ADMCorePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMCorePhoto.m; sourceTree = "<group>"; };
+		D3CAAA8D1AE545EF00C7BC53 /* ADMCoreTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMCoreTag.h; sourceTree = "<group>"; };
+		D3CAAA8E1AE545EF00C7BC53 /* ADMCoreTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMCoreTag.m; sourceTree = "<group>"; };
+		D3CAAA9F1AE547AF00C7BC53 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
+		D3CAAAA01AE547AF00C7BC53 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
+		D3CAAAA21AE547EB00C7BC53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D3CAAAA41AE548F300C7BC53 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataTableViewController.h; path = ../../HackerBooks/HackerBooks/AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		D3CAAAA51AE548F300C7BC53 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataTableViewController.m; path = ../../HackerBooks/HackerBooks/AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		D3CAAAA71AE5494200C7BC53 /* ADMCoreBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMCoreBookViewController.h; sourceTree = "<group>"; };
+		D3CAAAA81AE5494200C7BC53 /* ADMCoreBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMCoreBookViewController.m; sourceTree = "<group>"; };
+		D3CAAAB21AE55B1700C7BC53 /* ADMNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMNotesViewController.h; sourceTree = "<group>"; };
+		D3CAAAB31AE55B1700C7BC53 /* ADMNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMNotesViewController.m; sourceTree = "<group>"; };
+		D3CAAAB51AE5609200C7BC53 /* AGTNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTNoteViewController.h; sourceTree = "<group>"; };
+		D3CAAAB61AE5609200C7BC53 /* AGTNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTNoteViewController.m; sourceTree = "<group>"; };
+		D3CAAAB71AE5609200C7BC53 /* AGTNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGTNoteViewController.xib; sourceTree = "<group>"; };
+		D3CAAABA1AE561B300C7BC53 /* AGTPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTPhotoViewController.h; sourceTree = "<group>"; };
+		D3CAAABB1AE561B300C7BC53 /* AGTPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTPhotoViewController.m; sourceTree = "<group>"; };
+		D3CAAABC1AE561B300C7BC53 /* AGTPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGTPhotoViewController.xib; sourceTree = "<group>"; };
+		D3CAAABF1AE5670500C7BC53 /* ADMSimplePDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMSimplePDFViewController.h; sourceTree = "<group>"; };
+		D3CAAAC01AE5670500C7BC53 /* ADMSimplePDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMSimplePDFViewController.m; sourceTree = "<group>"; };
+		D3CAAAC11AE5670500C7BC53 /* ADMSimplePDFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADMSimplePDFViewController.xib; sourceTree = "<group>"; };
+		D3CAAAC71AE56FD300C7BC53 /* AGTMultiDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTMultiDictionary.h; sourceTree = "<group>"; };
+		D3CAAAC81AE56FD300C7BC53 /* AGTMultiDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTMultiDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +138,8 @@
 		D3CAAA1B1AE5437A00C7BC53 = {
 			isa = PBXGroup;
 			children = (
+				D3CAAAA21AE547EB00C7BC53 /* Default-568h@2x.png */,
+				D3CAAA721AE5459800C7BC53 /* Categories */,
 				D3CAAA261AE5437A00C7BC53 /* HackerBooksPro */,
 				D3CAAA401AE5437A00C7BC53 /* HackerBooksProTests */,
 				D3CAAA251AE5437A00C7BC53 /* Products */,
@@ -81,13 +158,12 @@
 		D3CAAA261AE5437A00C7BC53 /* HackerBooksPro */ = {
 			isa = PBXGroup;
 			children = (
+				D3CAAA4E1AE5445300C7BC53 /* Controllers */,
+				D3CAAA501AE5446300C7BC53 /* AppDelegate */,
 				D3CAAA2B1AE5437A00C7BC53 /* AppDelegate.h */,
 				D3CAAA2C1AE5437A00C7BC53 /* AppDelegate.m */,
-				D3CAAA2E1AE5437A00C7BC53 /* ViewController.h */,
-				D3CAAA2F1AE5437A00C7BC53 /* ViewController.m */,
-				D3CAAA311AE5437A00C7BC53 /* Main.storyboard */,
+				D3CAAA4D1AE5444B00C7BC53 /* Models */,
 				D3CAAA341AE5437A00C7BC53 /* Images.xcassets */,
-				D3CAAA361AE5437A00C7BC53 /* LaunchScreen.xib */,
 				D3CAAA271AE5437A00C7BC53 /* Supporting Files */,
 			);
 			path = HackerBooksPro;
@@ -117,6 +193,103 @@
 				D3CAAA421AE5437A00C7BC53 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3CAAA4D1AE5444B00C7BC53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAAA9D1AE545FB00C7BC53 /* Machine */,
+				D3CAAA9E1AE5478800C7BC53 /* CoreData */,
+				D3CAAAC71AE56FD300C7BC53 /* AGTMultiDictionary.h */,
+				D3CAAAC81AE56FD300C7BC53 /* AGTMultiDictionary.m */,
+				D3CAAA6E1AE5459300C7BC53 /* ADMCoreBaseClass.h */,
+				D3CAAA6D1AE5459300C7BC53 /* ADMCoreBaseClass.m */,
+				D3CAAA811AE545EF00C7BC53 /* ADMCoreAnnotation.h */,
+				D3CAAA821AE545EF00C7BC53 /* ADMCoreAnnotation.m */,
+				D3CAAA831AE545EF00C7BC53 /* ADMCoreAuthor.h */,
+				D3CAAA841AE545EF00C7BC53 /* ADMCoreAuthor.m */,
+				D3CAAA851AE545EF00C7BC53 /* ADMCoreBook.h */,
+				D3CAAA861AE545EF00C7BC53 /* ADMCoreBook.m */,
+				D3CAAA871AE545EF00C7BC53 /* ADMCoreImage.h */,
+				D3CAAA881AE545EF00C7BC53 /* ADMCoreImage.m */,
+				D3CAAA891AE545EF00C7BC53 /* ADMCorePDF.h */,
+				D3CAAA8A1AE545EF00C7BC53 /* ADMCorePDF.m */,
+				D3CAAA8B1AE545EF00C7BC53 /* ADMCorePhoto.h */,
+				D3CAAA8C1AE545EF00C7BC53 /* ADMCorePhoto.m */,
+				D3CAAA8D1AE545EF00C7BC53 /* ADMCoreTag.h */,
+				D3CAAA8E1AE545EF00C7BC53 /* ADMCoreTag.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D3CAAA4E1AE5445300C7BC53 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAAAA41AE548F300C7BC53 /* AGTCoreDataTableViewController.h */,
+				D3CAAAA51AE548F300C7BC53 /* AGTCoreDataTableViewController.m */,
+				D3CAAAA71AE5494200C7BC53 /* ADMCoreBookViewController.h */,
+				D3CAAAA81AE5494200C7BC53 /* ADMCoreBookViewController.m */,
+				D3CAAAB21AE55B1700C7BC53 /* ADMNotesViewController.h */,
+				D3CAAAB31AE55B1700C7BC53 /* ADMNotesViewController.m */,
+				D3CAAAB51AE5609200C7BC53 /* AGTNoteViewController.h */,
+				D3CAAAB61AE5609200C7BC53 /* AGTNoteViewController.m */,
+				D3CAAAB71AE5609200C7BC53 /* AGTNoteViewController.xib */,
+				D3CAAABA1AE561B300C7BC53 /* AGTPhotoViewController.h */,
+				D3CAAABB1AE561B300C7BC53 /* AGTPhotoViewController.m */,
+				D3CAAABC1AE561B300C7BC53 /* AGTPhotoViewController.xib */,
+				D3CAAABF1AE5670500C7BC53 /* ADMSimplePDFViewController.h */,
+				D3CAAAC01AE5670500C7BC53 /* ADMSimplePDFViewController.m */,
+				D3CAAAC11AE5670500C7BC53 /* ADMSimplePDFViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D3CAAA501AE5446300C7BC53 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D3CAAA721AE5459800C7BC53 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAAA691AE5459300C7BC53 /* UIViewController+Navigation.m */,
+				D3CAAA6A1AE5459300C7BC53 /* UIViewController+Navigation.h */,
+			);
+			name = Categories;
+			path = HackerBooksPro;
+			sourceTree = "<group>";
+		};
+		D3CAAA9D1AE545FB00C7BC53 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAAA731AE545EF00C7BC53 /* _ADMCoreAnnotation.h */,
+				D3CAAA741AE545EF00C7BC53 /* _ADMCoreAnnotation.m */,
+				D3CAAA751AE545EF00C7BC53 /* _ADMCoreAuthor.h */,
+				D3CAAA761AE545EF00C7BC53 /* _ADMCoreAuthor.m */,
+				D3CAAA771AE545EF00C7BC53 /* _ADMCoreBook.h */,
+				D3CAAA781AE545EF00C7BC53 /* _ADMCoreBook.m */,
+				D3CAAA791AE545EF00C7BC53 /* _ADMCoreImage.h */,
+				D3CAAA7A1AE545EF00C7BC53 /* _ADMCoreImage.m */,
+				D3CAAA7B1AE545EF00C7BC53 /* _ADMCorePDF.h */,
+				D3CAAA7C1AE545EF00C7BC53 /* _ADMCorePDF.m */,
+				D3CAAA7D1AE545EF00C7BC53 /* _ADMCorePhoto.h */,
+				D3CAAA7E1AE545EF00C7BC53 /* _ADMCorePhoto.m */,
+				D3CAAA7F1AE545EF00C7BC53 /* _ADMCoreTag.h */,
+				D3CAAA801AE545EF00C7BC53 /* _ADMCoreTag.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		D3CAAA9E1AE5478800C7BC53 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAAA9F1AE547AF00C7BC53 /* AGTCoreDataStack.h */,
+				D3CAAAA01AE547AF00C7BC53 /* AGTCoreDataStack.m */,
+				D3CAAA6B1AE5459300C7BC53 /* Model.xcdatamodeld */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +372,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3CAAA331AE5437A00C7BC53 /* Main.storyboard in Resources */,
-				D3CAAA381AE5437A00C7BC53 /* LaunchScreen.xib in Resources */,
+				D3CAAABE1AE561B300C7BC53 /* AGTPhotoViewController.xib in Resources */,
 				D3CAAA351AE5437A00C7BC53 /* Images.xcassets in Resources */,
+				D3CAAAA31AE547EB00C7BC53 /* Default-568h@2x.png in Resources */,
+				D3CAAAB91AE5609200C7BC53 /* AGTNoteViewController.xib in Resources */,
+				D3CAAAC31AE5670500C7BC53 /* ADMSimplePDFViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +394,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3CAAA301AE5437A00C7BC53 /* ViewController.m in Sources */,
+				D3CAAA8F1AE545EF00C7BC53 /* _ADMCoreAnnotation.m in Sources */,
+				D3CAAA6F1AE5459300C7BC53 /* UIViewController+Navigation.m in Sources */,
+				D3CAAAA61AE548F300C7BC53 /* AGTCoreDataTableViewController.m in Sources */,
+				D3CAAAB81AE5609200C7BC53 /* AGTNoteViewController.m in Sources */,
+				D3CAAAC91AE56FD300C7BC53 /* AGTMultiDictionary.m in Sources */,
+				D3CAAAB41AE55B1700C7BC53 /* ADMNotesViewController.m in Sources */,
+				D3CAAA971AE545EF00C7BC53 /* ADMCoreAuthor.m in Sources */,
 				D3CAAA2D1AE5437A00C7BC53 /* AppDelegate.m in Sources */,
+				D3CAAAA91AE5494200C7BC53 /* ADMCoreBookViewController.m in Sources */,
+				D3CAAA981AE545EF00C7BC53 /* ADMCoreBook.m in Sources */,
+				D3CAAA961AE545EF00C7BC53 /* ADMCoreAnnotation.m in Sources */,
+				D3CAAAA11AE547AF00C7BC53 /* AGTCoreDataStack.m in Sources */,
 				D3CAAA2A1AE5437A00C7BC53 /* main.m in Sources */,
+				D3CAAA991AE545EF00C7BC53 /* ADMCoreImage.m in Sources */,
+				D3CAAA711AE5459300C7BC53 /* ADMCoreBaseClass.m in Sources */,
+				D3CAAA701AE5459300C7BC53 /* Model.xcdatamodeld in Sources */,
+				D3CAAA931AE545EF00C7BC53 /* _ADMCorePDF.m in Sources */,
+				D3CAAA941AE545EF00C7BC53 /* _ADMCorePhoto.m in Sources */,
+				D3CAAA911AE545EF00C7BC53 /* _ADMCoreBook.m in Sources */,
+				D3CAAA9A1AE545EF00C7BC53 /* ADMCorePDF.m in Sources */,
+				D3CAAA9B1AE545EF00C7BC53 /* ADMCorePhoto.m in Sources */,
+				D3CAAA901AE545EF00C7BC53 /* _ADMCoreAuthor.m in Sources */,
+				D3CAAA9C1AE545EF00C7BC53 /* ADMCoreTag.m in Sources */,
+				D3CAAA951AE545EF00C7BC53 /* _ADMCoreTag.m in Sources */,
+				D3CAAA921AE545EF00C7BC53 /* _ADMCoreImage.m in Sources */,
+				D3CAAAC21AE5670500C7BC53 /* ADMSimplePDFViewController.m in Sources */,
+				D3CAAABD1AE561B300C7BC53 /* AGTPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,25 +441,6 @@
 			targetProxy = D3CAAA3E1AE5437A00C7BC53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D3CAAA311AE5437A00C7BC53 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D3CAAA321AE5437A00C7BC53 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D3CAAA361AE5437A00C7BC53 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D3CAAA371AE5437A00C7BC53 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D3CAAA451AE5437A00C7BC53 /* Debug */ = {
@@ -350,6 +530,7 @@
 				INFOPLIST_FILE = HackerBooksPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -360,6 +541,7 @@
 				INFOPLIST_FILE = HackerBooksPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -416,6 +598,7 @@
 				D3CAAA491AE5437A00C7BC53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3CAAA4A1AE5437A00C7BC53 /* Build configuration list for PBXNativeTarget "HackerBooksProTests" */ = {
 			isa = XCConfigurationList;
@@ -424,8 +607,22 @@
 				D3CAAA4C1AE5437A00C7BC53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3CAAA6B1AE5459300C7BC53 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3CAAA6C1AE5459300C7BC53 /* Model.xcdatamodel */,
+			);
+			currentVersion = D3CAAA6C1AE5459300C7BC53 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D3CAAA1C1AE5437A00C7BC53 /* Project object */;
 }

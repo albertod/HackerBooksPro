@@ -6,12 +6,13 @@
 //  Copyright (c) 2015 DiMartino. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@class AGTCoreDataStack;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic, strong) AGTCoreDataStack *stack;
 
 @end
 
