@@ -38,7 +38,6 @@
     book.image = [ADMCoreImage insertInManagedObjectContext:context];
     book.pdf = [ADMCorePDF insertInManagedObjectContext:context];
     book.isFavorite = FALSE;
-    
     return book;
 }
 
