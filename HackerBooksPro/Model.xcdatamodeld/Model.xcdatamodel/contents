@@ -36,7 +36,7 @@
         <relationship name="note" maxCount="1" deletionRule="Nullify" destinationEntity="Annotation" inverseName="photo" inverseEntity="Annotation" syncable="YES"/>
     </entity>
     <entity name="Tag" representedClassName="ADMCoreTag" syncable="YES">
-        <attribute name="tagName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagName" attributeType="String" indexed="YES" syncable="YES"/>
         <relationship name="book" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="tag" inverseEntity="Book" syncable="YES"/>
     </entity>
     <elements>
@@ -46,6 +46,6 @@
         <element name="Image" positionX="-324" positionY="-219" width="128" height="73"/>
         <element name="PDF" positionX="-315" positionY="-117" width="128" height="73"/>
         <element name="Photo" positionX="241" positionY="252" width="128" height="73"/>
-        <element name="Tag" positionX="-306" positionY="204" width="128" height="73"/>
+        <element name="Tag" positionX="-306" positionY="204" width="128" height="75"/>
     </elements>
 </model>

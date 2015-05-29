@@ -38,6 +38,11 @@
     book.image = [ADMCoreImage insertInManagedObjectContext:context];
     book.pdf = [ADMCorePDF insertInManagedObjectContext:context];
     book.isFavorite = FALSE;
+    NSMutableSet tagSet = [NSMutableSet new];
+    ADMCoreTag *tag = [NSEntityDescription insertNewObjectForEntityForName:@"Tag" inManagedObjectContext:context];
+    [tagSet addObject:tag];
+    book.tag = tagSet;
+    ;
     return book;
 }
 

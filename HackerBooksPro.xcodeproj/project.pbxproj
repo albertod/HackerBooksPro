@@ -160,8 +160,6 @@
 			children = (
 				D3CAAA4E1AE5445300C7BC53 /* Controllers */,
 				D3CAAA501AE5446300C7BC53 /* AppDelegate */,
-				D3CAAA2B1AE5437A00C7BC53 /* AppDelegate.h */,
-				D3CAAA2C1AE5437A00C7BC53 /* AppDelegate.m */,
 				D3CAAA4D1AE5444B00C7BC53 /* Models */,
 				D3CAAA341AE5437A00C7BC53 /* Images.xcassets */,
 				D3CAAA271AE5437A00C7BC53 /* Supporting Files */,
@@ -247,6 +245,8 @@
 		D3CAAA501AE5446300C7BC53 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				D3CAAA2B1AE5437A00C7BC53 /* AppDelegate.h */,
+				D3CAAA2C1AE5437A00C7BC53 /* AppDelegate.m */,
 			);
 			name = AppDelegate;
 			sourceTree = "<group>";
