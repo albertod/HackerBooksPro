@@ -9,6 +9,7 @@
 #import "ADMSimplePDFViewController.h"
 #import "ADMBookViewController.h"
 #import "ADMCoreImage.h"
+#import "ADMCorePDF.h"
 
 
 @interface ADMBookViewController ()
@@ -45,9 +46,7 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view from its nib.
-    self.tagsLabel.text = [self parseSetToString:self.model.tag];
-    self.authorLabel.text = [self parseSetToString:self.model.author];
-    self.coverView.image = [UIImage imageWithData:self.model.image.imageData];
+    [self syncviewWithModel];
     
 }
 
@@ -58,19 +57,19 @@
 
 -(IBAction)displayPDF:(id)sender{
     
-    ADMSimplePDFViewController *pdfVC = [[ADMSimplePDFViewController alloc]
-                                         initWithModel:self.model];
-    
+    ADMSimplePDFViewController *pdfVC = [[ADMSimplePDFViewController alloc] initWithModel:self.model.pdf book:self.model];
     [self.navigationController pushViewController:pdfVC animated:YES];
     
 }
+
 -(void) syncviewWithModel{
     
+    self.tagsLabel.text = [self parseSetToString:self.model.tag];
+    self.authorLabel.text = [self parseSetToString:self.model.author];
+    self.coverView.image = [UIImage imageWithData:self.model.image.imageData];
     self.title = self.model.title;
     self.titleLabel.text = self.model.title;
-    self.authorLabel.text= [self.model.authors componentsJoinedByString:@","];
-    self.tagsLabel.text= [self.model.tags componentsJoinedByString:@","];
-    self.coverView.image = self.model.photo;
+  
 }
 
 #pragma mark UISplitViewDelegate

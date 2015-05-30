@@ -10,7 +10,7 @@
 
 #import "AGTCoreDataStack.h"
 #import "ADMCoreBook.h"
-#import "ADMCoreBookViewController.h"
+#import "ADMCoreBooksTableViewController.h"
 #import "ADMCoreAnnotation.h"
 #import "UIViewController+Navigation.h"
 #import "ADMSimplePDFViewController.h"
@@ -60,7 +60,7 @@
     //View controller for books
     
     
-    ADMCoreBookViewController *vc = [[ADMCoreBookViewController alloc]
+    ADMCoreBooksTableViewController *vc = [[ADMCoreBooksTableViewController alloc]
                                      initWithFetchedResultsController:fc
                                      style:UITableViewStylePlain];
     

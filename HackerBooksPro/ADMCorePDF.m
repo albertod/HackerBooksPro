@@ -8,7 +8,6 @@
 
 @implementation ADMCorePDF
 
-
 -(void) setPdfData:(NSData *)pdfData{
     
     self.pdfData = pdfData;

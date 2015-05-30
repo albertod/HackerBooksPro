@@ -5,6 +5,8 @@
 
 @interface ADMCorePDF : _ADMCorePDF {}
 
+-(void) setPdfData:(NSData *)pdfData;
+-(NSData *)pdfData;
 
 
 @end
