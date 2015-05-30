@@ -33,18 +33,12 @@
     self.stack = [AGTCoreDataStack coreDataStackWithModelName:@"Model"];
     //Now we ahve ready our coreData to create objects
     
-    //[self createDummyData];
+    //Check if Data is on Local storage or Download on the background
+    [self initWithJSON];
     
-    //Download Data From JSON
-    
-    
-    
-    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://t.co/K9ziV0z3SJ"]];
-    [self initWithJSONData:data];
     
     //Organize by alfabeth If tie modification data
     // Buscar
-    
     NSFetchRequest *req = [NSFetchRequest
                            fetchRequestWithEntityName:[ADMCoreBook entityName]];
     
@@ -156,7 +150,7 @@
 
 
 
--(void) initWithJSONData:(NSData*) data{
+-(void) initWithJSON{
     
     
     
@@ -167,6 +161,7 @@
     if ([fm fileExistsAtPath:[localURL path]]) {
 
         NSError *err;
+        NSData *data = [NSData dataWithContentsOfURL:localURL];
         id json = [NSJSONSerialization JSONObjectWithData:data
                                                   options:0
                                                     error:&err ];

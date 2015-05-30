@@ -6,25 +6,30 @@
 //  Copyright (c) 2015 DiMartino. All rights reserved.
 //
 
-#import "ADMCoreBookViewController.h"
+#import "ADMCoreBooksTableViewController.h"
 #import "ADMCoreBook.h"
 #import "ADMCoreAnnotation.h"
 #import "ADMNotesViewController.h"
 #import "ADMCoreTag.h"
 
 
-@interface ADMCoreBookViewController ()
+@interface ADMCoreBooksTableViewController ()
 
 @end
 
-@implementation ADMCoreBookViewController
+@implementation ADMCoreBooksTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.title = @"HackerbookPro";
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-    [self initTable];
+
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 
@@ -33,17 +38,12 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) initTable{
-    
-    
-}
 
 
-#pragma mark - Retrive book for every cell
+#pragma mark - Retrive a book for every cell
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     
     //Averiguar la sesion (tag)
     ADMCoreTag *tag = [[self.fetchedResultsController fetchedObjects]objectAtIndex:indexPath.section];
