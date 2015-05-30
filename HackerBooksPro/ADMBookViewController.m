@@ -8,6 +8,7 @@
 
 #import "ADMSimplePDFViewController.h"
 #import "ADMBookViewController.h"
+#import "ADMCoreImage.h"
 
 
 @interface ADMBookViewController ()
@@ -42,7 +43,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
+    self.tagsLabel.text = [self parseSetToString:self.model.tag];
+    self.authorLabel.text = [self parseSetToString:self.model.author];
+    self.coverView.image = [UIImage imageWithData:self.model.image.imageData];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -90,7 +96,14 @@
     [self syncviewWithModel];
 }
 
+#pragma mark Utils
 
+-(NSString *)parseSetToString:(NSSet *)tagsSet {
+    
+    NSArray *myArray = [tagsSet allObjects];
+    NSString *myStr = [myArray componentsJoinedByString:@","];
+    return myStr;
+}
 
 
 @end
