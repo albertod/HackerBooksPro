@@ -70,8 +70,11 @@
                                      initWithFetchedResultsController:fc
                                      style:UITableViewStylePlain];
     
-    ADMCoreBook *book1 = [ADMCoreBook bookWithTitle:@"El libro de ti"
-                                           imageURL:@"http://hackershelf.com/media/cache/97/bf/97bfce708365236e0a5f3f9e26b4a796.jpg" pdfURL:@"https://progit2.s3.amazonaws.com/en/2015-03-06-439c2/progit-en.376.pdf" context:self.stack.context];
+    ADMCoreBook *book1 = [ADMCoreBook   bookWithTitle:@"El libro de ti"
+                                           imageURL:@"http://hackershelf.com/media/cache/97/bf/97bfce708365236e0a5f3f9e26b4a796.jpg" pdfURL:@"https://progit2.s3.amazonaws.com/en/2015-03-06-439c2/progit-en.376.pdf"
+                                            context:self.stack.context
+                                            tags:nil
+                                            ];
 
     
     ADMSimplePDFViewController *pdfVC = [[ADMSimplePDFViewController alloc] initWithModel:book1.pdf book:book1];
@@ -229,32 +232,32 @@
 }
 
 
--(void) createDummyData{
-    
-    [self.stack zapAllData];
-    
-    ADMCoreBook *book1 = [ADMCoreBook bookWithTitle:@"El libro de ti"
-                                           imageURL:@"http://hackershelf.com/media/cache/97/bf/97bfce708365236e0a5f3f9e26b4a796.jpg" pdfURL:@"http://hackershelf.com/media/cache/b4/24/b42409de128aa7f1c9abbbfa549914de.jpg" context:self.stack.context];
-    
-    
-         ADMCoreBook *book2 = [ADMCoreBook bookWithTitle:@"El libro de tu papa"
-                    imageURL:@"http://hackershelf.com/media/cache/97/bf/97bfce708365236e0a5f3f9e26b4a796.jpg" pdfURL:@"http://hackershelf.com/media/cache/b4/24/b42409de128aa7f1c9abbbfa549914de.jpg" context:self.stack.context];
-    
-    
-          [ADMCoreAnnotation noteWithName:@"book manolo" book:book1 context:self.stack.context];
-          [ADMCoreAnnotation noteWithName:@"book pablo" book:book1 context:self.stack.context];
-    
-          [ADMCoreAnnotation noteWithName:@"book clotilda" book:book2 context:self.stack.context];
-          [ADMCoreAnnotation noteWithName:@"book mana" book:book2 context:self.stack.context];
-    
-    
-    
-    //Save
-    [self.stack saveWithErrorBlock:^(NSError *error) {
-        NSLog(@"Error saving in app delegate@ %@", error);
-    }];
-    
-}
+//-(void) createDummyData{
+//    
+//    [self.stack zapAllData];
+//    
+//    ADMCoreBook *book1 = [ADMCoreBook bookWithTitle:@"El libro de ti"
+//                                           imageURL:@"http://hackershelf.com/media/cache/97/bf/97bfce708365236e0a5f3f9e26b4a796.jpg" pdfURL:@"http://hackershelf.com/media/cache/b4/24/b42409de128aa7f1c9abbbfa549914de.jpg" context:self.stack.context];
+//    
+//    
+//         ADMCoreBook *book2 = [ADMCoreBook bookWithTitle:@"El libro de tu papa"
+//                    imageURL:@"http://hackershelf.com/media/cache/97/bf/97bfce708365236e0a5f3f9e26b4a796.jpg" pdfURL:@"http://hackershelf.com/media/cache/b4/24/b42409de128aa7f1c9abbbfa549914de.jpg" context:self.stack.context];
+//    
+//    
+//          [ADMCoreAnnotation noteWithName:@"book manolo" book:book1 context:self.stack.context];
+//          [ADMCoreAnnotation noteWithName:@"book pablo" book:book1 context:self.stack.context];
+//    
+//          [ADMCoreAnnotation noteWithName:@"book clotilda" book:book2 context:self.stack.context];
+//          [ADMCoreAnnotation noteWithName:@"book mana" book:book2 context:self.stack.context];
+//    
+//    
+//    
+//    //Save
+//    [self.stack saveWithErrorBlock:^(NSError *error) {
+//        NSLog(@"Error saving in app delegate@ %@", error);
+//    }];
+//    
+//}
 
 
 @end

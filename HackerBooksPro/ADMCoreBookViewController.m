@@ -10,6 +10,8 @@
 #import "ADMCoreBook.h"
 #import "ADMCoreAnnotation.h"
 #import "ADMNotesViewController.h"
+#import "ADMCoreTag.h"
+
 
 @interface ADMCoreBookViewController ()
 
@@ -22,6 +24,7 @@
     
     self.title = @"HackerbookPro";
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    [self initTable];
 }
 
 
@@ -30,6 +33,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) initTable{
+    
+    
+}
 
 
 #pragma mark - Retrive book for every cell
@@ -37,9 +44,11 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    
+    //Averiguar la sesion (tag)
+    ADMCoreTag *tag = [[self.fetchedResultsController fetchedObjects]objectAtIndex:indexPath.section];
     // Averiguar cual es el libro
-    ADMCoreBook *b = [self.fetchedResultsController
-                       objectAtIndexPath:indexPath];
+    ADMCoreBook *b = [[tag.book allObjects] objectAtIndex:indexPath.row];
     
     // Crear una celda
     static NSString *cellID = @"bookCell";
@@ -79,9 +88,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
 -(void) tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
  
-    // Averiguar la libreta
-    ADMCoreBook *book = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
+    
+    ADMCoreTag *tag = [[self.fetchedResultsController fetchedObjects]objectAtIndex:indexPath.section];
+    // Averiguar la libreta
+    ADMCoreBook *book = [[tag.book allObjects]objectAtIndex:indexPath.row];
     // Crear un contorlador de notas
     NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[ADMCoreAnnotation entityName]];
     req.sortDescriptors = @[[NSSortDescriptor
@@ -93,7 +104,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                              ascending:NO]];
     req.fetchBatchSize = 20;
     
-    req.predicate = [NSPredicate predicateWithFormat:@"book = %@", book];
+    req.predicate = [NSPredicate predicateWithFormat:@"book == %@", book];
     
     NSFetchedResultsController *fc = [[NSFetchedResultsController alloc]
                                       initWithFetchRequest:req

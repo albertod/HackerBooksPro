@@ -10,7 +10,8 @@
 +(instancetype) bookWithTitle:(NSString * )title
                      imageURL:(NSString *) imageURL
                      pdfURL  :(NSString *) pdfURL
-                      context:(NSManagedObjectContext *) context;
+                      context:(NSManagedObjectContext *) context
+                      tags:(NSString *) theTags;
 
 +(instancetype) initWithJSONDictionary:(NSDictionary*) dict context:(NSManagedObjectContext*) context;
 

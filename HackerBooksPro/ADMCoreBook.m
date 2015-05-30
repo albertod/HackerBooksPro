@@ -28,7 +28,9 @@
 +(instancetype) bookWithTitle:(NSString * )title
                      imageURL:(NSString *) imageURL
                      pdfURL  :(NSString *) pdfURL
-                      context:(NSManagedObjectContext *) context{
+                      context:(NSManagedObjectContext *) context
+                         tags:(NSString *) theTags
+{
     
     ADMCoreBook *book = [self insertInManagedObjectContext:context];
     
@@ -38,11 +40,9 @@
     book.image = [ADMCoreImage insertInManagedObjectContext:context];
     book.pdf = [ADMCorePDF insertInManagedObjectContext:context];
     book.isFavorite = FALSE;
-    NSMutableSet tagSet = [NSMutableSet new];
-    ADMCoreTag *tag = [NSEntityDescription insertNewObjectForEntityForName:@"Tag" inManagedObjectContext:context];
-    [tagSet addObject:tag];
-    book.tag = tagSet;
-    ;
+    //Parsetags and add to the book
+    [ADMCoreTag parseBookTags:theTags context:context aBook:book];
+    
     return book;
 }
 
@@ -54,7 +54,8 @@
     return [self bookWithTitle:[dict objectForKey:TITLE]
                       imageURL:[dict objectForKey:IMAGE_URL]
                         pdfURL:[dict objectForKey:PDF_URL]
-                       context:context];
+                       context:context
+                          tags: [dict objectForKey:TAGS]];
 }
 
 #pragma mark -  Utils
