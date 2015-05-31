@@ -28,9 +28,11 @@
             ADMCoreTag *fetchedTag = [self insertInManagedObjectContext:context];
             fetchedTag.tagName = aTag;
             [allTags addObject:fetchedTag];
-            book.tag = allTags;
+            [book setTag:allTags];
         }
     }
+    
+    [context save:nil];
 }
 
 @end

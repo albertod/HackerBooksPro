@@ -51,7 +51,8 @@
     //Averiguar la sesion (tag)
     ADMCoreTag *tag = [[self.fetchedResultsController fetchedObjects]objectAtIndex:indexPath.section];
     
-    // Averiguar cual es el libro
+    
+    //Averiguar cual es el libro
     NSArray *test =  [tag.book allObjects];
     ADMCoreBook *b = [test objectAtIndex:indexPath.row];
     
@@ -70,7 +71,6 @@
     cell.imageView.image = [UIImage imageWithData:b.image.imageData];
     // Devolverla
     return cell;
-    
     
 }
 

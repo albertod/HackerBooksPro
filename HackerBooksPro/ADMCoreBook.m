@@ -34,12 +34,11 @@
     
     ADMCoreBook *book = [self insertInManagedObjectContext:context];
     
-    book.title=title;
-    book.imageURL = imageURL;
-    book.pdfURL = pdfURL;
-    book.image = [ADMCoreImage insertInManagedObjectContext:context];
-    book.pdf = [ADMCorePDF insertInManagedObjectContext:context];
-    book.isFavorite = FALSE;
+    [book setTitle:title];
+    [book setImageURL:imageURL];
+    [book setPdfURL:pdfURL];
+    [book setImage:[ADMCoreImage insertInManagedObjectContext:context]];
+    [book setIsFavoriteValue:FALSE];
     //Parsetags and add to the book
     [ADMCoreTag parseBookTags:theTags context:context aBook:book];
     
