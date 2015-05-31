@@ -11,6 +11,7 @@
 #import "ADMCoreAnnotation.h"
 #import "ADMNotesViewController.h"
 #import "ADMCoreTag.h"
+#import "ADMCoreImage.h"
 
 
 @interface ADMCoreBooksTableViewController ()
@@ -45,10 +46,14 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    //Uncomment to debeug the fetchedResultController
+    self.debug = YES;
     //Averiguar la sesion (tag)
     ADMCoreTag *tag = [[self.fetchedResultsController fetchedObjects]objectAtIndex:indexPath.section];
+    
     // Averiguar cual es el libro
-    ADMCoreBook *b = [[tag.book allObjects] objectAtIndex:indexPath.row];
+    NSArray *test =  [tag.book allObjects];
+    ADMCoreBook *b = [test objectAtIndex:indexPath.row];
     
     // Crear una celda
     static NSString *cellID = @"bookCell";
@@ -62,7 +67,7 @@
     // Configurarla (sincronizar libreta -> celda)
     cell.textLabel.text = b.title;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)[b.note count]];
-    
+    cell.imageView.image = [UIImage imageWithData:b.image.imageData];
     // Devolverla
     return cell;
     
@@ -131,26 +136,5 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [nc postNotification:n];
     
 }
-
-
-//we Don't create book so we dont need the button
-//#pragma mark - Utils
-//-(void) addNewBookButton{
-//    
-//    UIBarButtonItem *add = [[UIBarButtonItem alloc]
-//                            initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-//                            target:self action:@selector(addNewBook:)];
-//    
-//    self.navigationItem.rightBarButtonItem = add;
-//    
-//}
-//
-//#pragma mark -  Actions
-//-(void) addNewBook:(id) sender{
-//    
-//    [ADMCoreBook bookWithTitle:@"New Book" imageURL:@"" pdfURL:@""
-//                       context:self.fetchedResultsController.managedObjectContext];
-//    
-//}
 
 @end

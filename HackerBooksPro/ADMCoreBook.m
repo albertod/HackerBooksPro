@@ -43,6 +43,7 @@
     //Parsetags and add to the book
     [ADMCoreTag parseBookTags:theTags context:context aBook:book];
     
+    [context save:nil];
     return book;
 }
 

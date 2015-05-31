@@ -1,4 +1,4 @@
-//
+ //
 //  AppDelegate.m
 //  HackerBooksPro
 //
@@ -48,28 +48,30 @@
                              ascending:YES
                              selector:@selector(caseInsensitiveCompare:)]];
     req.fetchBatchSize = 20;
-    //req.predicate = [NSPredicate predicateWithFormat:@"book = %@", [ADMCoreBook entityName]];
-    
+
     
     //FetchedResult Controller
-    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
-                                                                         managedObjectContext:self.stack.context
-                                                                           sectionNameKeyPath:nil
-                                                                                    cacheName:nil];
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc]
+                                      initWithFetchRequest:req
+                                      managedObjectContext:self.stack.context
+                                      sectionNameKeyPath:nil
+                                      cacheName:nil];
     
    
     //View controller for books
-    
-    
     ADMCoreBooksTableViewController *vc = [[ADMCoreBooksTableViewController alloc]
                                      initWithFetchedResultsController:fc
                                      style:UITableViewStylePlain];
     
-    ADMCoreBook *book1 = [ADMCoreBook   bookWithTitle:@"El libro de ti"
-                                           imageURL:@"http://hackershelf.com/media/cache/97/bf/97bfce708365236e0a5f3f9e26b4a796.jpg" pdfURL:@"https://progit2.s3.amazonaws.com/en/2015-03-06-439c2/progit-en.376.pdf"
+    ADMCoreBook *book1 = [ADMCoreBook   bookWithTitle:nil
+                                           imageURL:nil
+                                               pdfURL:nil
                                             context:self.stack.context
                                             tags:nil
                                             ];
+    
+    
+    
     
     ADMBookViewController *bookVC = [[ADMBookViewController alloc] initWithModel:book1 fetchedResultController:fc];
     
@@ -149,9 +151,6 @@
 
 
 -(void) initWithJSON{
-    
-    
-    
     NSFileManager *fm = [NSFileManager defaultManager];
     
     NSURL *localURL = [self localURLForRemoteURL:[NSURL URLWithString:@"https://t.co/K9ziV0z3SJ"]];
@@ -162,7 +161,7 @@
         NSData *data = [NSData dataWithContentsOfURL:localURL];
         id json = [NSJSONSerialization JSONObjectWithData:data
                                                   options:0
-                                                    error:&err ];
+                                                    error:&err];
         if (json == nil) {
             // There was an error
             NSLog(@"Error while parsing json data.\n%@", err);
@@ -170,7 +169,7 @@
         }else{
             _bookDB = [AGTMultiDictionary dictionary];
             [self processJSONArray: json];
-            //            [self setupNotifications]
+            //[self setupNotifications]
         }
     }
     
@@ -193,8 +192,8 @@
                     
                 }else{
                     _bookDB = [AGTMultiDictionary dictionary];
+                    //
                     [self processJSONArray: json];
-                    //            [self setupNotifications]
                 }
                 
                 [data writeToURL:localURL
@@ -204,7 +203,6 @@
         });
         
     }
-
 }
 
 #pragma mark - JSON Processing
@@ -225,32 +223,7 @@
 }
 
 
-//-(void) createDummyData{
-//    
-//    [self.stack zapAllData];
-//    
-//    ADMCoreBook *book1 = [ADMCoreBook bookWithTitle:@"El libro de ti"
-//                                           imageURL:@"http://hackershelf.com/media/cache/97/bf/97bfce708365236e0a5f3f9e26b4a796.jpg" pdfURL:@"http://hackershelf.com/media/cache/b4/24/b42409de128aa7f1c9abbbfa549914de.jpg" context:self.stack.context];
-//    
-//    
-//         ADMCoreBook *book2 = [ADMCoreBook bookWithTitle:@"El libro de tu papa"
-//                    imageURL:@"http://hackershelf.com/media/cache/97/bf/97bfce708365236e0a5f3f9e26b4a796.jpg" pdfURL:@"http://hackershelf.com/media/cache/b4/24/b42409de128aa7f1c9abbbfa549914de.jpg" context:self.stack.context];
-//    
-//    
-//          [ADMCoreAnnotation noteWithName:@"book manolo" book:book1 context:self.stack.context];
-//          [ADMCoreAnnotation noteWithName:@"book pablo" book:book1 context:self.stack.context];
-//    
-//          [ADMCoreAnnotation noteWithName:@"book clotilda" book:book2 context:self.stack.context];
-//          [ADMCoreAnnotation noteWithName:@"book mana" book:book2 context:self.stack.context];
-//    
-//    
-//    
-//    //Save
-//    [self.stack saveWithErrorBlock:^(NSError *error) {
-//        NSLog(@"Error saving in app delegate@ %@", error);
-//    }];
-//    
-//}
+
 
 
 @end

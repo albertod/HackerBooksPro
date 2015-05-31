@@ -17,18 +17,18 @@
     
     for(NSString *aTag in tagsStoredInContext){
         NSFetchRequest *fetch = [NSFetchRequest fetchRequestWithEntityName:@"Tag"];
-        NSPredicate *p = [NSPredicate predicateWithFormat:@"tagName = %@",aTag];
+        NSPredicate *p = [NSPredicate predicateWithFormat:@"tagName == %@",aTag];
         [fetch setPredicate:p];
         NSArray *tagsFetched = [context executeFetchRequest:fetch error:nil];
         
-        if(tagsFetched.count > 0){
+        if(tagsFetched.count != 0){
             [book addTagObject:[tagsFetched lastObject]]; //add last result from the NSFetchrequest
         }else{
             //Tag has not been fetched
-            ADMCoreTag *fetchedTag = [ADMCoreTag insertInManagedObjectContext:context];
+            ADMCoreTag *fetchedTag = [self insertInManagedObjectContext:context];
             fetchedTag.tagName = aTag;
             [allTags addObject:fetchedTag];
-            book.tag = allTags; 
+            book.tag = allTags;
         }
     }
 }
