@@ -15,7 +15,8 @@
 #import "UIViewController+Navigation.h"
 #import "ADMSimplePDFViewController.h"
 #import "AGTMultiDictionary.h"
-
+#import "ADMCoreTag.h"
+#import "ADMBookViewController.h"
 
 @interface AppDelegate ()
 
@@ -40,10 +41,10 @@
     //Organize by alfabeth If tie modification data
     // Buscar
     NSFetchRequest *req = [NSFetchRequest
-                           fetchRequestWithEntityName:[ADMCoreBook entityName]];
+                           fetchRequestWithEntityName:[ADMCoreTag entityName]];
     
     req.sortDescriptors = @[[NSSortDescriptor
-                             sortDescriptorWithKey:ADMCoreBookAttributes.title
+                             sortDescriptorWithKey:ADMCoreTagAttributes.tagName
                              ascending:YES
                              selector:@selector(caseInsensitiveCompare:)]];
     req.fetchBatchSize = 20;
@@ -69,24 +70,21 @@
                                             context:self.stack.context
                                             tags:nil
                                             ];
-
     
-    ADMSimplePDFViewController *pdfVC = [[ADMSimplePDFViewController alloc] initWithModel:book1.pdf book:book1];
-    
+    ADMBookViewController *bookVC = [[ADMBookViewController alloc] initWithModel:book1 fetchedResultController:fc];
     
     // Creo los navigations
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc];
-    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:pdfVC];
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:bookVC];
     
     // Creo el SplitView
     UISplitViewController *splitVC = [UISplitViewController new];
     splitVC.viewControllers = @[nav1,nav2];
-    
-    
+    splitVC.delegate = bookVC;
+    vc.delegate = bookVC;
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
     self.window.rootViewController = splitVC;
 
     
